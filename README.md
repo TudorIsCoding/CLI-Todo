@@ -38,8 +38,9 @@ todo sort -asc/-desc
 # Listing the remaining tasks 
 todo rmn
 ```
+Example of how to use the project: 
 
-### How to use the project.
+
 
 ## LICENSE
 This project is licensed under the MIT License - see the LICENSE file for details.
