@@ -1,6 +1,6 @@
 [package]
 name = "cli_todo_list_sqlite"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["TudorIsCoding"]
 edition = "2021"
 description = "A simple CLI todo list in rust using sqlite"
