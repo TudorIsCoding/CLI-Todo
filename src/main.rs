@@ -1,8 +1,8 @@
+use cli_todo_list_sqlite::run;
+use cli_todo_list_sqlite::Config;
 use std::env;
 use std::error::Error;
 use std::process;
-use todo_list::run;
-use todo_list::Config;
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
     let config = Config::build(&args)?;
