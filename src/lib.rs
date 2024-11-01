@@ -31,7 +31,7 @@ impl Config {
     5. reset for reseting all the tasks in todo-list
     6. sort -asc for sorting tasks ascendent , -desc for sorting tasks descendent by the name
     7. rmn for listing all the remaing tasks that are not done";
-        Box::new(MyError(error_msg.into()))
+        Box::new(MyError(error_msg.to_string()))
     }
     pub fn build(args: &[String]) -> Result<Config, Box<dyn Error>> {
         if args.len() < 2 {
@@ -57,7 +57,7 @@ impl Config {
         conn.execute(
             "CREATE TABLE IF NOT EXISTS todo_list(
             id  INTEGER PRIMARY KEY,
-            name TEXT NOT NULL,
+            name TEXT NOT NULL UNIQUE,
             status BOOL
             )",
             (),

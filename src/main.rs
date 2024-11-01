@@ -5,11 +5,15 @@ use std::error::Error;
 use std::process;
 fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
-    let config = Config::build(&args)?;
-
-    if let Err(e) = run(config) {
+    let config = Config::build(&args);
+    if let Err(e) = config {
         println!("{e}");
-        process::exit(1);
+    } else {
+        let temp = config.unwrap();
+        if let Err(e) = run(temp) {
+            println!("{e}");
+            process::exit(1);
+        }
     }
     Ok(())
 }
