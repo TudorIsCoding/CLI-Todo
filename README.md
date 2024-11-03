@@ -39,8 +39,8 @@ todo sort -asc/-desc
 todo rmn
 ```
 
-
-![Example:](videos/output.gif)
+## Example of use:
+![Example:](video/output.gif)
 
 
 ## LICENSE
