@@ -37,7 +37,8 @@ todo sort -asc/-desc
 
 # Listing the remaining tasks 
 todo rmn
-``` 
+```
+
 
 ![Example:](videos/output.gif)
 
