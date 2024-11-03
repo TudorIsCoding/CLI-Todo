@@ -37,9 +37,9 @@ todo sort -asc/-desc
 
 # Listing the remaining tasks 
 todo rmn
-```
-Example of how to use the project: 
+``` 
 
+![Example:](videos/output.gif)
 
 
 ## LICENSE
